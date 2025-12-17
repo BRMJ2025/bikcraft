@@ -75,36 +75,6 @@ img {
   width: 100%;
 }
 
-/*Medias Queries*/
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-  .header-menu a {
-    background: #111;
-    padding: 12px 16px;
-    border-radius: 4px;
-  }
-
-  .header-menu a:hover::after {
-    display: none;
-  }
-
-  .header-menu a:hover {
-    background: #2e2e2e;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
-
 /*Introdução*/
 .main-bg {
   background: #000;
@@ -167,4 +137,74 @@ img {
 
 .main a:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+/*Medias Queries*/
+@media (max-width: 1200px) {
+  .main h1 {
+    font-size: 48px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: #111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover::after {
+    display: none;
+  }
+
+  .header-menu a:hover {
+    background: #2e2e2e;
+  }
+
+  .main-bg {
+    background: #111;
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #fff;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .main-conteudo {
+    padding-bottom: 0;
+  }
+
+  .main h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .main img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .main a {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
 }
